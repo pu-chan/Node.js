@@ -1,6 +1,6 @@
 ## Day1
 
-### 事前準備
+### 事前準備1
 * [Node.jsのインストール](https://nodejs.org/ja/)
   * バージョン12.16.2のインストール
   
@@ -9,6 +9,30 @@
 * [Herokuの設定](https://devcenter.heroku.com/articles/heroku-cli)
   * Herokuアカウント作成、Heroku CLIのインストール
   * [参考資料1](https://chusotsu-program.com/heroku-getting-started/)／[参考資料2](http://vdeep.net/rubyonrails-heroku)
+  
+  
+### 事前準備2
+* GitHubからリポジトリをクローンします。  
+ex)デスクトップに空フォルダ「lesson」を作成。  
+＞ ターミナルを開く   
+＞ cd lesson   
+＞ git clone https://github.com/pu-chan/confetti_cuisine_1.git
+
+* 設定ファイル「package.json」に記述されているパッケージをインストールします。  
+サーバーを立ち上げ、localhostでアクセスします。  
+＞ npm install  
+＞ npm start  
+＞ localhost:3000
+
+* 以下のURLにアクセスしてみてください。  
+localhost:3000/contact  
+localhost:3000/courses  
+localhost:3000/abc   
+
+※main.jsの「経路」の箇所で、ルーティングを設定しています。  
+「"/contact"」はgetとpostを設定しています。  
+
+***
 
 ### 当日詳細
 
