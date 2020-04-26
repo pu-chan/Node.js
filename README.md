@@ -105,7 +105,7 @@ localhost:3000/subscribers
 
 ②ディレクトリ + ファイルの作成  
 
-LESSON17「ディレクトリ構造」
+LESSON16「ディレクトリ構造」
 ```
 confetti_cuisine_2
 │  main.js
@@ -136,8 +136,8 @@ confetti_cuisine_2
 
 ③LESSON12の引継ぎコード記述  
 
-LESSON17は、LESSON12を引き継いでいる箇所があります。  
-LESSON12のコードを記述した後、写真どおりLESSON17を進めて下さい。  
+LESSON16は、LESSON12を引き継いでいる箇所があります。  
+LESSON12のコードを記述した後、写真どおりLESSON16を進めて下さい。  
 ※LESSON12から引継ぐコードはGitHubを参照 ↓    
 [「LESSON12の引継ぎ + ディレクトリとファイル」の作成参照](https://github.com/pu-chan/confetti_cuisine_2/commits/master)
 
