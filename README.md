@@ -166,25 +166,30 @@ LESSON12のコードを記述した後、写真どおりLESSON16を進めて下�
 
 ## Day3
 
-細かい機能を除くと、今回でアプリの全体像が完成します。
-参考書の料理レシピアプリ「confetti cuisine」を「ともすたサロン」アプリに改造します。
-「ともすたサロン」は、オンライン勉強会やイベント仲間を募るアプリで、ともすた内connpassのようなイメージです。
+細かい機能を除くと、今回でアプリの全体像が完成します。  
+参考書の料理レシピアプリ「confetti cuisine」を「ともすたサロン」アプリに改造します。  
+「ともすたサロン」は、オンライン勉強会やイベント仲間を募るアプリで、ともすた内connpassのようなイメージです。  
 
-アプリの仕様
-- 3つのモデル
-preuserモデル：仮登録者を保持
-usersモデル：ユーザを保持
-coursesモデル：イベント内容を保持
-※仮登録者とユーザの違いは、後日追加するチャット機能が使えるか？などで必要になります。
+アプリの仕様  
+```
+●3つのモデル  
+preuserモデル：仮登録者を保持  
+usersモデル：ユーザを保持  
+coursesモデル：イベント内容を保持  
+※仮登録者とユーザの違いは、後日追加するチャット機能が使えるか？などで必要になります。  
+```
 
-- 4つのビュー
+```
+●4つのビュー
 preuser、user、courseそれぞれにおいて、ビューを4つずつ作成します。  
 index.ejs：データの一覧画面  
 new.ejs：入力フォーム画面  
 show.ejs：詳細表示画面  
 edit.ejs：編集画面  
+```
 
-- コントローラで定義する10個のメソッド　　
+```
+●コントローラで定義する10個のメソッド　　
 preuser、user、courseそれぞれにおいて、メソッドを10個ずつ作成します。  
 index：全てのデータを取り出す  
 indexView：index.ejsを表示する  
@@ -196,53 +201,53 @@ showView：show.ejsを表示する
 edit：選択されたデータを1つ取り出した後、そのデータをセットしてedit.ejsを表示する  
 update：フォームに入力された編集データを格納する  
 delete：選択されたデータを削除した後、index.ejsを表示する  
+```
 
-この他のファイル(error.ejsやlayout.ejsなど)は、LESSON16を引き継ぎ、不要になったファイル(thanks.ejsなど)は、削除しました。  
+error.ejsやlayout.ejsなどのファイルは、LESSON16を引き継ぎ、  
+不要になったファイル(thanks.ejsなど)は、削除しました。  
 
 ### 事前準備1
 * GitHubからリポジトリをクローンします。  
 **ホームディレクトリ直下に**空フォルダ「lesson」を作成。  
 ＞ ターミナルを開く   
 ＞ cd lesson   
-＞ git clone https://github.com/pu-chan/confetti_cuisine_3.git  
+＞ git clone https://github.com/pu-chan/tomosta_salon.git  
 
 * 設定ファイル「package.json」に記述されているパッケージをインストールします。  
 サーバーを立ち上げ、localhostでアクセスします。  
-＞ cd confetti_cuisine_3.git    
+＞ cd tomosta_salon     
 ＞ npm install  
 ＞ npm start  
 
 * 以下のURLにアクセスしてみてください。  
 ・localhost:3000/preusers/new    
 フォームに入力し、ボタン押下 → localhost:3000/preusers/createに変更することを確認。  
-・localhost:3000/preusers
-・「名前のリンク」押下 → localhost:3000/preusers/<データのid>に変更することを確認
-・「編集のリンク」押下 → localhost:3000/preusers/<データのid>/edit 〃
-フォームに入力し、ボタン押下 → localhost:3000/preusers/<データのid> /update 〃
-・「削除のリンク」押下 → データが削除されることを確認
+・localhost:3000/preusers  
+・「名前のリンク」押下 → localhost:3000/preusers/<データのid>に変更することを確認  
+・「編集のリンク」押下 → localhost:3000/preusers/<データのid>/edit 〃  
+フォームに入力し、ボタン押下 → localhost:3000/preusers/<データのid> /update 〃  
+・「削除のリンク」押下 → データが削除されることを確認  
 
 ※main.jsの「経路」の箇所で、ルーティングを設定しています。  
 上記以外の経路は設定されていないため、  
-「404 ...NOT FOUND...」の画面が表示されれば成功です。
+「404 ...NOT FOUND...」の画面が表示されれば成功です。  
 
 ### 事前準備2  
 
-事前準備1でcloneした「confetti_cuisine_3」では、  
-preuser、course、user3つのうち、preuserのみ完了しています。
-courseとuserは、空白のままです。
-完成しているpreuserを参考に、courseとuserを作成してみてください。
-途中までで結構です。無理せず楽しい範囲で作成してみてください。
-(当日詳細のステップに沿って、course、userそれぞれの「モデル」「ビュー」「コントローラ」を作成し、経路を追加します。)
-当日は、お互いが作成したコードの続きから一緒にアプリを完成しましょう。
+事前準備1でcloneした「tomosta_salon」では、preuser、course、user3つのうち、preuserのみ完了しています。  
+courseとuserは、空白のままです。完成しているpreuserを参考に、courseとuserを作成してみてください。  
+途中まででOKです。無理しない範囲で楽しく作成してみてください。  
+(当日詳細のステップに沿って、course、userそれぞれの「モデル」「ビュー」「コントローラ」を作成し、経路を追加します。)  
+当日は、お互いが作成したコードの続きから一緒にアプリを完成しましょう。  
 
 ***
  
 ### 当日詳細
 
-- モデルを3つ作成し、MVCモデルを設計します。
-- 3つのモデル全てに対してCRUD機能を実装し、ビューからデータの新規作成/表示/更新/削除ができるようにします。
+- モデルを3つ作成し、MVCモデルを設計します。  
+- 3つのモデル全てに対してCRUD機能を実装し、ビューからデータの新規作成/表示/更新/削除ができるようにします。  
 
-☆以下のステップで進みます。
+☆以下のステップで進みます。  
 
 1 データのモデリング  
 ⇒preusersモデルを参考に、「usersモデル」、「coursesモデル」のmongooseスキーマを定義します。  
