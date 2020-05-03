@@ -211,11 +211,11 @@ layout.ejsなどのファイルは、LESSON16を引き継ぎ、
 **ホームディレクトリ直下に**空フォルダ「lesson」を作成。  
 ＞ ターミナルを開く   
 ＞ cd lesson   
-＞ git clone https://github.com/pu-chan/tomosta_salon.git  
+＞ git clone https://github.com/pu-chan/tomosta_salon.git    
 
 * 設定ファイル「package.json」に記述されているパッケージをインストールします。  
 サーバーを立ち上げ、localhostでアクセスします。  
-＞ cd tomosta_salon     
+＞ cd tomosta_salon       
 ＞ npm install  
 ＞ npm start  
 
@@ -234,30 +234,26 @@ layout.ejsなどのファイルは、LESSON16を引き継ぎ、
 ### 事前準備2  
 
 事前準備1でcloneした「tomosta_salon」では、preuser、course、user3つのうち、preuserのみ完了しています。  
-courseとuserは、空白のままです。完成しているpreuserを参考に、courseとuserを作成してみてください。  
-途中まででOKです。無理しない範囲で楽しく作成してみてください。  
-(当日詳細のステップに沿って、course、userそれぞれの「モデル」「ビュー」「コントローラ」を作成し、経路を追加します。)  
+courseとuserは、モデルのみ完成、「ビュー」と「コントローラ」は空白のままです。  
+preuserを参考に、courseとuserの「ビュー」と「コントローラ」の作成、「経路の追加」をしてみてください。  
+途中まででOKです。無理しない範囲で楽しく作成してみてください。    
 当日は、お互いが作成したコードの続きから一緒にアプリを完成しましょう。  
 
 ***
  
 ### 当日詳細
-
-- モデルを3つ作成し、MVCモデルを設計します。  
+  
 - 3つのモデル全てに対してCRUD機能を実装し、ビューからデータの新規作成/表示/更新/削除ができるようにします。  
 
-☆以下のステップで進みます。  
+☆以下のステップで進みます。   
 
-1 データのモデリング  
-⇒preuserモデルを参考に、「userモデル」、「courseモデル」のmongooseスキーマを定義します。  
-
-2 ビューを作成する  
+1 ビューを作成する  
 ⇒views/preusersの4つのビューを参考に、  
 views/users、views/coursesにそれぞれ4つのビューを作成する。  
 
-3 経路を追加する  
+2 経路を追加する  
 ⇒preusersを参考に、main.jsの経路の箇所にusers、coursesのルーティングを追加します。  
 
-4 コントローラとモデルの接続  
+3 コントローラとモデルの接続  
 ⇒preuserモデルとpreusersコントローラの接続を参考に、  
 userモデルとusersコントローラ、courseモデルとcoursesコントローラを接続します。
