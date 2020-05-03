@@ -220,12 +220,12 @@ layout.ejsなどのファイルは、LESSON16を引き継ぎ、
 ＞ npm start  
 
 * 以下のURLにアクセスしてみてください。  
-・localhost:3000/preusers/new    
-フォームに入力し、ボタン押下 → localhost:3000/preusersに変更することを確認。  
-・「名前のリンク」押下 → localhost:3000/preusers/<データのid>に変更することを確認     
-・「Editのリンク」押下 → localhost:3000/preusers/<データのid>/edit 〃   
-フォームを編集し、ボタン押下 → localhost:3000/preusers/<データのid> 〃    
-・「削除のリンク」押下 → データが削除されることを確認  
+- localhost:3000/preusers/new  
+フォームに入力し、ボタン押下 → localhost:3000/preusersに変更することを確認  
+- 「名前のリンク」押下 → localhost:3000/preusers/<データのid>に変更することを確認  
+- 「Editのリンク」押下 → localhost:3000/preusers/<データのid>/edit 〃  
+フォームを編集し、ボタン押下 → localhost:3000/preusers/<データのid> 〃  
+- 「削除のリンク」押下 → データが削除されることを確認  
 
 ※main.jsの「経路」の箇所で、ルーティングを設定しています。  
 上記以外の経路は設定されていないため、  
