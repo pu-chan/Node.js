@@ -173,7 +173,7 @@ LESSON12のコードを記述した後、写真どおりLESSON16を進めて下�
 アプリの仕様  
 ```
 ●3つのモデル  
-preuserモデル：仮登録者を保持  
+preusersモデル：仮登録者を保持  
 usersモデル：ユーザを保持  
 coursesモデル：イベント内容を保持  
 ※仮登録者とユーザの違いは、後日追加するチャット機能が使えるか？などで必要になります。  
@@ -203,7 +203,7 @@ update：フォームに入力された編集データを格納する
 delete：選択されたデータを削除した後、index.ejsを表示する  
 ```
 
-error.ejsやlayout.ejsなどのファイルは、LESSON16を引き継ぎ、  
+layout.ejsなどのファイルは、LESSON16を引き継ぎ、  
 不要になったファイル(thanks.ejsなど)は、削除しました。  
 
 ### 事前準備1
@@ -223,7 +223,7 @@ error.ejsやlayout.ejsなどのファイルは、LESSON16を引き継ぎ、
 ・localhost:3000/preusers/new    
 フォームに入力し、ボタン押下 → localhost:3000/preusers/createに変更することを確認。  
 ・localhost:3000/preusers  
-・「名前のリンク」押下 → localhost:3000/preusers/<データのid>に変更することを確認  
+・「名前のリンク」押下 → localhost:3000/preusers/<データのid>に変更することを確認    
 ・「編集のリンク」押下 → localhost:3000/preusers/<データのid>/edit 〃  
 フォームに入力し、ボタン押下 → localhost:3000/preusers/<データのid> /update 〃  
 ・「削除のリンク」押下 → データが削除されることを確認  
