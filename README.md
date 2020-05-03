@@ -173,9 +173,9 @@ LESSON12のコードを記述した後、写真どおりLESSON16を進めて下�
 アプリの仕様  
 ```
 ●3つのモデル  
-preusersモデル：仮登録者を保持  
-usersモデル：ユーザを保持  
-coursesモデル：イベント内容を保持  
+preuserモデル：仮登録者を保持  
+userモデル：ユーザを保持  
+courseモデル：イベント内容を保持  
 ※仮登録者とユーザの違いは、後日追加するチャット機能が使えるか？などで必要になります。  
 ```
 
@@ -221,11 +221,10 @@ layout.ejsなどのファイルは、LESSON16を引き継ぎ、
 
 * 以下のURLにアクセスしてみてください。  
 ・localhost:3000/preusers/new    
-フォームに入力し、ボタン押下 → localhost:3000/preusers/createに変更することを確認。  
-・localhost:3000/preusers  
-・「名前のリンク」押下 → localhost:3000/preusers/<データのid>に変更することを確認    
-・「編集のリンク」押下 → localhost:3000/preusers/<データのid>/edit 〃  
-フォームに入力し、ボタン押下 → localhost:3000/preusers/<データのid> /update 〃  
+フォームに入力し、ボタン押下 → localhost:3000/preusersに変更することを確認。  
+・「名前のリンク」押下 → localhost:3000/preusers/<データのid>に変更することを確認     
+・「Editのリンク」押下 → localhost:3000/preusers/<データのid>/edit 〃   
+フォームを編集し、ボタン押下 → localhost:3000/preusers/<データのid> 〃    
 ・「削除のリンク」押下 → データが削除されることを確認  
 
 ※main.jsの「経路」の箇所で、ルーティングを設定しています。  
@@ -250,7 +249,7 @@ courseとuserは、空白のままです。完成しているpreuserを参考に
 ☆以下のステップで進みます。  
 
 1 データのモデリング  
-⇒preusersモデルを参考に、「usersモデル」、「coursesモデル」のmongooseスキーマを定義します。  
+⇒preuserモデルを参考に、「userモデル」、「courseモデル」のmongooseスキーマを定義します。  
 
 2 ビューを作成する  
 ⇒views/preusersの4つのビューを参考に、  
@@ -260,6 +259,5 @@ views/users、views/coursesにそれぞれ4つのビューを作成する。
 ⇒preusersを参考に、main.jsの経路の箇所にusers、coursesのルーティングを追加します。  
 
 4 コントローラとモデルの接続  
-⇒preusersモデルとpreusersコントローラの接続を参考に、  
-usersモデルとusersコントローラ、coursesモデルとcoursesコントローラを接続します。
-
+⇒preuserモデルとpreusersコントローラの接続を参考に、  
+userモデルとusersコントローラ、courseモデルとcoursesコントローラを接続します。
