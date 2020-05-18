@@ -1,4 +1,4 @@
-[🥚Day1](#day1) / [🐣Day2](#day2) / [🐥Day3](#day3)
+[🥚Day1](#day1) / [🐣Day2](#day2) / [🐥Day3](#day3) / [🐥Day4](#day4)
 
 ## Day1
 
@@ -257,3 +257,36 @@ views/users、views/coursesにそれぞれ4つのビューを作成する。
 3 コントローラとモデルの接続  
 ⇒preuserモデルとpreusersコントローラの接続を参考に、  
 userモデルとusersコントローラ、courseモデルとcoursesコントローラを接続します。
+
+
+## Day4
+### 事前準備1
+* GitHubからリポジトリをクローンします。  
+**ホームディレクトリ直下に**空フォルダ「lesson」を作成。  
+＞ ターミナルを開く   
+＞ cd lesson   
+＞ git clone https://github.com/pu-chan/tomosta_salon.git
+
+* 設定ファイル「package.json」に記述されているパッケージをインストールします。  
+サーバーを立ち上げ、localhostでアクセスします。  
+＞ cd tomosta_salon    
+＞ npm install  
+＞ npm start  
+
+* 以下のURLにアクセスして、動作するか確認してください。  
+localhost:3000  
+
+### 事前準備2
+* ユーザ登録時の「パスワードのハッシュ化」について  
+- [ハッシュ](https://wa3.i-3-i.info/word16973.html)と[ソルト](https://wa3.i-3-i.info/word16974.html)とは  
+⇒　localhost:3000/users/new　から、ユーザ登録を行い、mongoDBに生パスワードではなく、saltとhashが保存されているを確認する。  
+⇒ 確認方法：(ターミナル) mongo > use tomosta_salon > db.users.find().pretty() > saltとhashの保存を確認。
+
+- フラッシュメッセージについて  
+⇒ ログインやユーザ登録に成功(失敗)した時に、成功(失敗)のメッセージが出るようになっています。  
+⇒ userController.jsで「flash」を検索するとsuccess/errorの場合のflashメッセージを設定している箇所がヒットします。    
+⇒ 好きなメッセージに変更して期待通りに動くか試してください。  
+
+***
+
+### 当日詳細
