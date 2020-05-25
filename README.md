@@ -1,4 +1,4 @@
-[🥚Day1](#day1) / [🐣Day2](#day2) / [🐥Day3](#day3) / [🐥Day4](#day4)
+[🥚Day1](#day1) / [🐣Day2](#day2) / [🐥Day3](#day3) / [🐥Day4](#day4) / [🐥Day5](#day5)
 
 ## Day1
 
@@ -287,6 +287,27 @@ localhost:3000
 ⇒ userController.jsで「flash」を検索するとsuccess/errorの場合のflashメッセージを設定している箇所がヒットします。    
 ⇒ 好きなメッセージに変更して期待通りに動くか試してください。  
 
-***
 
-### 当日詳細
+## Day5
+最終回は、シンプルなチャット機能を作り、デプロイまで完成させます。  
+チャット機能の実装はむずかしくありませんが、新しい概念(WebSockt)が登場します。  
+
+### 事前準備1
+* [ポーリング](https://thinkit.co.jp/story/2011/03/01/2025)、[WebSocket](https://www.sejuku.net/blog/70583)(今回使用するのはWebSocket)について理解する。  
+* WebSocketをサポートするサービス[「socket.io」の使い方](https://www.sejuku.net/blog/82316)を学ぶ。  
+
+### 事前準備2
+* GitHubからリポジトリをクローンします。  
+**ホームディレクトリ直下に**空フォルダ「lesson」を作成。  
+＞ ターミナルを開く   
+＞ cd lesson   
+＞ git clone https://github.com/pu-chan/tomosta_salon.git
+
+* 設定ファイル「package.json」に記述されているパッケージをインストールします。  
+サーバーを立ち上げ、localhostでアクセスします。  
+＞ cd tomosta_salon    
+＞ npm install  
+＞ npm start  
+
+* 以下のURLにアクセスして、動作するか確認してください。  
+localhost:3000  
